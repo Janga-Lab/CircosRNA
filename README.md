@@ -62,49 +62,49 @@ usage: RNACircos.py [-h] [-i INPUT] [-i2 SECONDARY_INPUT] [-l] [-c] [-c1 COLOR_O
 CLI for graphing of dotbracket notation of RNA secondary structure
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -i INPUT, --input INPUT
-			input file for the dot-bracket structure
-  -i2 SECONDARY_INPUT, --secondary_input SECONDARY_INPUT
-			secondary input file, also signals the superimposition of one linear/circular representation onto another
-  -l, --linear          Produces the linear representation of RNA secondary structure
-  -c, --circular        Produces the circular representation of RNA secondary structure
-  -c1 COLOR_ONE, --color_one COLOR_ONE
-			selected color for the plot, the default is lightblue
-  -c2 COLOR_TWO, --color_two COLOR_TWO
-			selected color for the superimposed plot, the default is lightgreen
-  -c3 COLOR_THREE, --color_three COLOR_THREE
-			When graphs are superimposed, the overlapping areas should be set to a seperate color, something which contrasts well is recommended
-  -c4 COLOR_FOUR, --color_four COLOR_FOUR
-			overlap color of unaligned regions if -a2 is chosen
-  -a, --align           Align the nucleotides before checking for structural similarities (recommended)
-  -sa, --second_alignment_path
-			align and permit the overlaping regions to be some fourth color of your choice
-  -o OVERLAY_ALPHA, --overlay_alpha OVERLAY_ALPHA
-			transparency value between 0 and 1 for the overlying plot in superimposed graphs
-  -u UNDERLAY_ALPHA, --underlay_alpha UNDERLAY_ALPHA
-			transparency value between 0 and 1 for the underlying plot in superimposed graphs
-  -m, --match_radii     by default, circular representations of secondary structure will adapt to polymer length, including this argument will cause the circular graphs to adopt uniform radii
-  -st STRUCTURES [STRUCTURES ...], --structures STRUCTURES [STRUCTURES ...]
-			input files for the dot-bracket structure
-  -MSA MSA_FILE, --MSA_file MSA_FILE
-			input MSA alignment output from CLUSTALW
-  -ct CUTOFF, --cutoff CUTOFF
-			number of homologous sequences to be ignored (start from 0, the default, and work your way up (1,2,3....) if in doubt
-  -cn, --colored_nucleotides
-			colored nucleotide alignment for MSA
-  -nc NUCLEOTIDE_COLORS [NUCLEOTIDE_COLORS ...], --nucleotide_colors NUCLEOTIDE_COLORS [NUCLEOTIDE_COLORS ...]
-			specific colors for nucleotides given the "colored_nucleotides" command, the colors are ordered as A,T,G, and C, default colors are lime-green, orange-red, blue-violet, and cyan
-  -pm P_MATRIX_INPUT, --p_matrix_input P_MATRIX_INPUT
-			required input *dp.ps containing the ViennaRNA generated probability matrix. Triggers gradient generation
-  -lc LOW_PROB_COLOR [LOW_PROB_COLOR ...], --low_prob_color LOW_PROB_COLOR [LOW_PROB_COLOR ...]
-			add the low rgb values for the custom gradient
-  -hc HIGH_PROB_COLOR [HIGH_PROB_COLOR ...], --high_prob_color HIGH_PROB_COLOR [HIGH_PROB_COLOR ...]
-			add the high rgb values for the custom gradient
-  -g, --gradient_legend
-			adds a legend to gradient graphs to show which color corresponds to a low probability and which color coresponds to a high probability
-  -n, --nucleotides     adds nucleotides to the visualization
-  -d DPI, --dpi DPI     enter the dpi needed for supderimposed graphs, there is no "one size fits all", raise or lower this value as needed, start with 96 if in doubt
+	  -h, --help            show this help message and exit
+	  -i INPUT, --input INPUT
+				input file for the dot-bracket structure
+	  -i2 SECONDARY_INPUT, --secondary_input SECONDARY_INPUT
+				secondary input file, also signals the superimposition of one linear/circular representation onto another
+	  -l, --linear          Produces the linear representation of RNA secondary structure
+	  -c, --circular        Produces the circular representation of RNA secondary structure
+	  -c1 COLOR_ONE, --color_one COLOR_ONE
+				selected color for the plot, the default is lightblue
+	  -c2 COLOR_TWO, --color_two COLOR_TWO
+				selected color for the superimposed plot, the default is lightgreen
+	  -c3 COLOR_THREE, --color_three COLOR_THREE
+				When graphs are superimposed, the overlapping areas should be set to a seperate color, something which contrasts well is recommended
+	  -c4 COLOR_FOUR, --color_four COLOR_FOUR
+				overlap color of unaligned regions if -a2 is chosen
+	  -a, --align           Align the nucleotides before checking for structural similarities (recommended)
+	  -sa, --second_alignment_path
+				align and permit the overlaping regions to be some fourth color of your choice
+	  -o OVERLAY_ALPHA, --overlay_alpha OVERLAY_ALPHA
+				transparency value between 0 and 1 for the overlying plot in superimposed graphs
+	  -u UNDERLAY_ALPHA, --underlay_alpha UNDERLAY_ALPHA
+				transparency value between 0 and 1 for the underlying plot in superimposed graphs
+	  -m, --match_radii     by default, circular representations of secondary structure will adapt to polymer length, including this argument will cause the circular graphs to adopt uniform radii
+	  -st STRUCTURES [STRUCTURES ...], --structures STRUCTURES [STRUCTURES ...]
+				input files for the dot-bracket structure
+	  -MSA MSA_FILE, --MSA_file MSA_FILE
+				input MSA alignment output from CLUSTALW
+	  -ct CUTOFF, --cutoff CUTOFF
+				number of homologous sequences to be ignored (start from 0, the default, and work your way up (1,2,3....) if in doubt
+	  -cn, --colored_nucleotides
+				colored nucleotide alignment for MSA
+	  -nc NUCLEOTIDE_COLORS [NUCLEOTIDE_COLORS ...], --nucleotide_colors NUCLEOTIDE_COLORS [NUCLEOTIDE_COLORS ...]
+				specific colors for nucleotides given the "colored_nucleotides" command, the colors are ordered as A,T,G, and C, default colors are lime-green, orange-red, blue-violet, and cyan
+	  -pm P_MATRIX_INPUT, --p_matrix_input P_MATRIX_INPUT
+				required input *dp.ps containing the ViennaRNA generated probability matrix. Triggers gradient generation
+	  -lc LOW_PROB_COLOR [LOW_PROB_COLOR ...], --low_prob_color LOW_PROB_COLOR [LOW_PROB_COLOR ...]
+				add the low rgb values for the custom gradient
+	  -hc HIGH_PROB_COLOR [HIGH_PROB_COLOR ...], --high_prob_color HIGH_PROB_COLOR [HIGH_PROB_COLOR ...]
+				add the high rgb values for the custom gradient
+	  -g, --gradient_legend
+				adds a legend to gradient graphs to show which color corresponds to a low probability and which color coresponds to a high probability
+	  -n, --nucleotides     adds nucleotides to the visualization
+	  -d DPI, --dpi DPI     enter the dpi needed for supderimposed graphs, there is no "one size fits all", raise or lower this value as needed, start with 96 if in doubt
 
 
 BASIC USAGE
