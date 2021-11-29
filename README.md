@@ -296,35 +296,35 @@ You need to have all of the sequences in fasta format and in a single file, one 
 After producing the dot bracket structures, the command for producing the visualizations is:
 
 
-	./RNACircos.py -l -st phylogeny_structure/sequence_1_structure.txt 	phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 1
+	./RNACircos.py -l -st phylogeny_structures/sequence_1_structure.txt 	phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 1
 
 ![Figure_1_github](https://user-images.githubusercontent.com/79552389/143955136-0e7362c8-9342-4497-a888-3f217ef371d7.png)
 
-	./RNACircos.py -c -st phylogeny_structure/sequence_1_structure.txt phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 1
+	./RNACircos.py -c -st phylogeny_structures/sequence_1_structure.txt phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 1
 	
 ![Figure_1_github_circle](https://user-images.githubusercontent.com/79552389/143955266-584003d1-da9a-4e04-aa22-75c09d625099.png)
 
 The value input for ct decides how much of the alignment structures you wish to obscure to keep the visualization clean. Here are some examples:
 
-	./RNACircos.py -l -st phylogeny_structure/sequence_1_structure.txt 	phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 0
+	./RNACircos.py -l -st phylogeny_structures/sequence_1_structure.txt 	phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 0
 	
 ![Figure_1](https://user-images.githubusercontent.com/79552389/143955438-50381705-393e-43ed-915b-579b097fb844.png)
 
 
-	./RNACircos.py -l -st phylogeny_structure/sequence_1_structure.txt 	phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 1
+	./RNACircos.py -l -st phylogeny_structures/sequence_1_structure.txt 	phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 1
 
 ![Figure_2](https://user-images.githubusercontent.com/79552389/143955483-cc1a13d4-47bc-49d4-a139-762de59784ae.png)
 
 
-	./RNACircos.py -l -st phylogeny_structure/sequence_1_structure.txt 	phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 2
+	./RNACircos.py -l -st phylogeny_structures/sequence_1_structure.txt 	phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 2
 	
 ![Figure_3](https://user-images.githubusercontent.com/79552389/143955562-7a8c0261-9f22-4101-97a5-4b4ca27430a5.png)
 
-	./RNACircos.py -l -st phylogeny_structure/sequence_1_structure.txt 	phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 3
+	./RNACircos.py -l -st phylogeny_structures/sequence_1_structure.txt 	phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 3
 
 ![Figure_4](https://user-images.githubusercontent.com/79552389/143955678-601e01aa-0915-409e-b1d6-56f9a75b2560.png)
 
-	./RNACircos.py -l -st phylogeny_structure/sequence_1_structure.txt 	phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 4
+	./RNACircos.py -l -st phylogeny_structures/sequence_1_structure.txt 	phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 4
 	
 ![Figure_5](https://user-images.githubusercontent.com/79552389/143955730-7aac528d-99d7-4459-974d-a1ff96aa7e32.png)
 
@@ -336,11 +336,11 @@ The nucleotide configuration is different here. The original nucleotide format d
 
 The user is recommended to use the alternative nucleotide configuration for multiple sequence alignments.
 
-	./RNACircos.py -l -st phylogeny_structure/sequence_1_structure.txt phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 1 -cn
+	./RNACircos.py -l -st phylogeny_structures/sequence_1_structure.txt phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 1 -cn
 	
 ![Figure_colors](https://user-images.githubusercontent.com/79552389/143956289-2afdc729-d384-43ca-8ae2-59eed40b96b7.png)
 
-	./RNACircos.py -c -st phylogeny_structure/sequence_1_structure.txt phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 1 -cn
+	./RNACircos.py -c -st phylogeny_structures/sequence_1_structure.txt phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 1 -cn
 	
 ![Figure_6](https://user-images.githubusercontent.com/79552389/143956385-5ccebc28-3c23-4a3c-8034-11cbcfe29962.png)
 
@@ -348,30 +348,8 @@ The user is recommended to use the alternative nucleotide configuration for mult
 
 These colors can be customized for aesthetics:
 
-	./RNACircos.py -c -st phylogeny_structure/sequence_1_structure.txt phylogeny_structure/sequence_2_structure.txt phylogeny_structure/sequence_3_structure.txt phylogeny_structure/sequence_4_structure.txt phylogeny_structure/sequence_5_structure.txt -MSA sequence_1_5_output.txt -lc blue -hc red -g -ct 1 -cn -nc blue red green yellow
+	./RNACircos.py -c -st phylogeny_structures/sequence_1_structure.txt phylogeny_structures/sequence_2_structure.txt phylogeny_structures/sequence_3_structure.txt phylogeny_structures/sequence_4_structure.txt phylogeny_structures/sequence_5_structure.txt -MSA phylogeny_structures/sequence_1_5_output.txt -lc blue -hc red -g -ct 1 -cn -nc blue red green yellow
 	
 
 ![Figure_alternative_colors](https://user-images.githubusercontent.com/79552389/143956580-ef451e98-232b-4333-bf63-94e1c4959807.png)
-
-
-
-
-
-
-
-
-
-
-	
-
-	
-
-
-
-
-
-
-
-
-
 
